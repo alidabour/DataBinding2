@@ -1,11 +1,11 @@
-package com.viralcorners.databinding;
+package com.viralcorners.databinding.oneway;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
+import com.viralcorners.databinding.R;
 import com.viralcorners.databinding.databinding.ItemBinding;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public Adapter(){
         userList = new ArrayList<>();
-        userList.add(new User("user1","http://www.nandanihomes.com/images/home-.jpg"));
+        userList.add(new User("user1","https://organicthemes.com/demo/profile/files/2012/12/profile_img.png"));
         userList.add(new User("user2","https://organicthemes.com/demo/profile/files/2012/12/profile_img.png"));
         userList.add(new User("user3","https://organicthemes.com/demo/profile/files/2012/12/profile_img.png"));
         userList.add(new User("user4","https://organicthemes.com/demo/profile/files/2012/12/profile_img.png"));

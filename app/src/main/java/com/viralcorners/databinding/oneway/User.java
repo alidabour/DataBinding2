@@ -1,4 +1,4 @@
-package com.viralcorners.databinding;
+package com.viralcorners.databinding.oneway;
 
 /**
  * Created by Ali on 13/09/2017.

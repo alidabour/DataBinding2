@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.viralcorners.databinding.MainActivity">
+        tools:context="com.viralcorners.databinding.oneway.OneWayActivity">
 
         <TextView
             android:id="@+id/head"

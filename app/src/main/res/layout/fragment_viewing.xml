@@ -1,0 +1,50 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="person"
+            type="com.viralcorners.databinding.twoway.Person"/>
+    </data>
+<RelativeLayout
+    android:background="#E57373"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viralcorners.databinding.twoway.ViewingFragment">
+
+    <TextView
+        android:layout_margin="4dp"
+        android:id="@+id/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{person.name}" />
+    <TextView
+        android:id="@+id/student"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/name"
+        android:text="@{person.isStudent?String.format(@string/study_hard,person.name):String.format(@string/work_hard,person.name)}"
+        android:visibility="@{person.name.get().length()>2?View.VISIBLE:View.INVISIBLE}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/name"
+        android:text="@{person.isStudent?String.format(@string/study_hard,person.name):String.format(@string/work_hard,person.name)}"
+        android:visibility="@{person.name.get().length()>2?View.VISIBLE:View.INVISIBLE}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="@{person.points>0?View.VISIBLE:View.INVISIBLE}"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_margin="4dp"
+        android:text="@{String.format(@string/points,person.points)}"
+        android:layout_below="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</layout>

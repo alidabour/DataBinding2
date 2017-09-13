@@ -1,4 +1,4 @@
-package com.viralcorners.databinding;
+package com.viralcorners.databinding.oneway;
 
 import android.databinding.BindingAdapter;
 import android.widget.ImageView;

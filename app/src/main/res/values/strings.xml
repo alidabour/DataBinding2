@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">DataBinding</string>
+    <string name="one_way_example">One Way Example</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="two_way_example">Two Way Example</string>
+    <string name="name">Name</string>
+    <string name="work_hard">Hi %1$s ! Work hard, Please!</string>
+    <string name="study_hard">Hi %1$s ! Study hard, Please!</string>
+    <string name="add_points">Add points!!</string>
+    <string name="points">%1$s Points</string>
+
 </resources>

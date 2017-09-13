@@ -1,0 +1,47 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="person"
+            type="com.viralcorners.databinding.twoway.Person"/>
+    </data>
+    <RelativeLayout
+        android:background="#FFCDD2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.viralcorners.databinding.twoway.EditFragment">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="4dp"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="@string/name"
+                android:text="@={person.name}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Switch
+            android:checked="@={person.isStudent}"
+            android:layout_margin="4dp"
+            android:layout_below="@+id/name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="Are you Student?"
+            android:id="@+id/student_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_below="@id/student_switch"
+            android:onClick="@{()->person.addPoints()}"
+            android:text="@string/add_points"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</layout>
