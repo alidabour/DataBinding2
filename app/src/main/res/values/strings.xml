@@ -10,5 +10,10 @@
     <string name="study_hard">Hi %1$s ! Study hard, Please!</string>
     <string name="add_points">Add points!!</string>
     <string name="points">%1$s Points</string>
+    <string name="mvvm_recycleview">MvvM + RecycleView</string>
+    <string name="welcome">Welcome !</string>
+    <string name="event_handling">Event Handling</string>
+    <string name="save">Save</string>
+
 
 </resources>

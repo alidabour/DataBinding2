@@ -3,4 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="C62828">#C62828</color>
+    <color name="C2196F3">#2196F3</color>
+    <color name="A7FFEB">#A7FFEB</color>
+    <color name="F4FF81">#F4FF81</color>
+    <color name="EF6C00">#EF6C00</color>
+    <array name="mvvmColor">
+        <item>@color/EF6C00</item>
+        <item>@color/F4FF81</item>
+        <item>@color/A7FFEB</item>
+        <item>@color/C2196F3</item>
+        <item>@color/C62828</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorAccent</item>
+    </array>
 </resources>

@@ -1,0 +1,27 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+    <import type="android.view.View"/>
+    <variable
+        name="viewModel"
+        type="com.viralcorners.databinding.mvvm.MVVMViewModel"/>
+</data>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viralcorners.databinding.mvvm.MVVMFragment">
+
+    <android.support.v7.widget.RecyclerView
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"        android:id="@+id/recycleview"
+        app:adapterList="@{viewModel.dataList}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ProgressBar
+        android:layout_gravity="center"
+        android:visibility="@{viewModel.isLoading?View.VISIBLE:View.GONE}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
+</layout>

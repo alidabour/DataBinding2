@@ -23,5 +23,19 @@
         android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/recycleview"
+        android:text="@string/mvvm_recycleview"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="@string/event_handling"
+        android:onClick="onClick"
+        android:id="@+id/eventhandling"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
 </ScrollView>

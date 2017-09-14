@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".twoway.TwoWayBindingActivity"></activity>
+        <activity android:name=".twoway.TwoWayBindingActivity" />
+        <activity android:name=".mvvm.MVVMActivity" />
+        <activity android:name=".eventhandling.EventHandlingActivity"></activity>
     </application>
 
 </manifest>

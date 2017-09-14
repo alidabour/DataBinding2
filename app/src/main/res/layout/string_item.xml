@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<data>
+    <import type="java.util.Random"/>
+    <import type="com.viralcorners.databinding.R"/>
+    <variable
+        name="object"
+        type="String"/>
+</data>
+    <TextView
+        android:gravity="center"
+        android:padding="2dp"
+        tools:text="2"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_margin="4dp"
+        android:text="@{object}"
+        android:background="@{context.getResources().getIntArray(R.array.mvvmColor)[(int)(Math.random() * 7)]}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </TextView>
+</layout>

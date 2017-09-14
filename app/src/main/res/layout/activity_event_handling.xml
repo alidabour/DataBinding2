@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="task"
+            type="com.viralcorners.databinding.eventhandling.Task"/>
+        <variable
+            name="handler"
+            type="com.viralcorners.databinding.eventhandling.MyHandlers"/>
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viralcorners.databinding.eventhandling.EventHandlingActivity">
+
+    <Button
+        android:onClick="@{handler::onClickFriend}"
+        android:text="handler::onClickFriend"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:gravity="center"
+        android:text="() -> handler.onSaveClick(task)"
+        android:onClick="@{() -> handler.onSaveClick(task)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:gravity="center"
+        android:text="(view) -> handler.onSaveClick(task)"
+        android:onClick="@{(view) -> handler.onSaveClick(task)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:gravity="center"
+        android:text="(view) -> handler.onSaveWithView(view,task)"
+        android:onClick="@{(view) -> handler.onSaveWithView(view,task)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:gravity="center"
+        android:text="(view) -> handler.onSaveWithLongClick(view,task)"
+        android:onLongClick="@{(view) -> handler.onSaveWithLongClick(view,task)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>
+</layout>
