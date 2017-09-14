@@ -1,10 +1,12 @@
-package com.viralcorners.databinding.mvvm;
+package com.viralcorners.databinding.mvvm.viewmodel;
 
 import android.databinding.BaseObservable;
-import android.databinding.Observable;
 import android.databinding.ObservableArrayList;
 import android.databinding.ObservableBoolean;
 import android.databinding.ObservableList;
+
+import com.viralcorners.databinding.mvvm.network.DataSource;
+import com.viralcorners.databinding.mvvm.network.Repository;
 
 import java.util.List;
 

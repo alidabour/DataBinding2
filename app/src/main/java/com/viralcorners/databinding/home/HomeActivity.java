@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.viralcorners.databinding.R;
 import com.viralcorners.databinding.eventhandling.EventHandlingActivity;
-import com.viralcorners.databinding.mvvm.MVVMActivity;
+import com.viralcorners.databinding.mvvm.ui.MVVMActivity;
 import com.viralcorners.databinding.oneway.OneWayActivity;
 import com.viralcorners.databinding.twoway.TwoWayBindingActivity;
 

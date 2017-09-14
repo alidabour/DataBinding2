@@ -1,4 +1,4 @@
-package com.viralcorners.databinding.mvvm;
+package com.viralcorners.databinding.mvvm.network;
 
 import android.support.annotation.NonNull;
 
@@ -8,7 +8,6 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 import retrofit2.mock.BehaviorDelegate;
 
 /**

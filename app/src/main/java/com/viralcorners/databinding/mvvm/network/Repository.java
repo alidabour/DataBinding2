@@ -1,4 +1,4 @@
-package com.viralcorners.databinding.mvvm;
+package com.viralcorners.databinding.mvvm.network;
 
 import android.support.annotation.NonNull;
 

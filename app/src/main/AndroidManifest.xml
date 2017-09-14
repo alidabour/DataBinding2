@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".twoway.TwoWayBindingActivity" />
-        <activity android:name=".mvvm.MVVMActivity" />
+        <activity android:name=".mvvm.ui.MVVMActivity" />
         <activity android:name=".eventhandling.EventHandlingActivity"></activity>
     </application>
 

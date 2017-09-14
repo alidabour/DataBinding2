@@ -5,12 +5,12 @@
     <import type="android.view.View"/>
     <variable
         name="viewModel"
-        type="com.viralcorners.databinding.mvvm.MVVMViewModel"/>
+        type="com.viralcorners.databinding.mvvm.viewmodel.MVVMViewModel"/>
 </data>
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.viralcorners.databinding.mvvm.MVVMFragment">
+    tools:context="com.viralcorners.databinding.mvvm.ui.MVVMFragment">
 
     <android.support.v7.widget.RecyclerView
         app:layoutManager="android.support.v7.widget.LinearLayoutManager"        android:id="@+id/recycleview"

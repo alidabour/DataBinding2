@@ -1,10 +1,12 @@
-package com.viralcorners.databinding.mvvm;
+package com.viralcorners.databinding.mvvm.ui;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.viralcorners.databinding.R;
+import com.viralcorners.databinding.mvvm.Injection;
+import com.viralcorners.databinding.mvvm.viewmodel.MVVMViewModel;
 import com.viralcorners.databinding.mvvm.util.ActivityUtils;
 import com.viralcorners.databinding.mvvm.util.ViewModelHolder;
 

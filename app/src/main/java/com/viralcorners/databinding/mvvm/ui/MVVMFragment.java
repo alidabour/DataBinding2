@@ -1,4 +1,4 @@
-package com.viralcorners.databinding.mvvm;
+package com.viralcorners.databinding.mvvm.ui;
 
 
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.viralcorners.databinding.databinding.FragmentMvvmBinding;
+import com.viralcorners.databinding.mvvm.AdapterMVVM;
+import com.viralcorners.databinding.mvvm.viewmodel.MVVMViewModel;
 
 public class MVVMFragment extends Fragment {
 
