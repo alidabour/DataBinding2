@@ -17,6 +17,7 @@ public class Person extends BaseObservable{
     public ObservableField<String> name = new ObservableField<>("");
     public ObservableBoolean isStudent = new ObservableBoolean();
     public ObservableInt points = new ObservableInt(0);
+    public ObservableInt progress = new ObservableInt(10);
 
     public void start(){
     }

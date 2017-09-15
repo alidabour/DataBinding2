@@ -6,7 +6,7 @@
             type="com.viralcorners.databinding.twoway.Person"/>
     </data>
     <RelativeLayout
-        android:background="#FFCDD2"
+        android:background="#FFCD10"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.viralcorners.databinding.twoway.EditFragment">
@@ -34,9 +34,17 @@
             android:layout_height="wrap_content" />
 
         <Button
+            android:id="@+id/add"
             android:layout_below="@id/student_switch"
             android:onClick="@{()->person.addPoints()}"
             android:text="@string/add_points"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:progress="@={person.progress}"
+            android:layout_below="@+id/add"
             android:layout_margin="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

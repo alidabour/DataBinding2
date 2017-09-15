@@ -7,7 +7,7 @@
             type="com.viralcorners.databinding.twoway.Person"/>
     </data>
 <RelativeLayout
-    android:background="#E57373"
+    android:background="#007373"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.viralcorners.databinding.twoway.ViewingFragment">
@@ -39,11 +39,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/points"
         android:visibility="@{person.points>0?View.VISIBLE:View.INVISIBLE}"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:layout_margin="4dp"
         android:text="@{String.format(@string/points,person.points)}"
         android:layout_below="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:progress="@={person.progress}"
+        android:layout_below="@+id/points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </RelativeLayout>
