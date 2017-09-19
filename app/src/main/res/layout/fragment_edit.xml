@@ -52,11 +52,20 @@
 
 
         <TextView
+            android:id="@+id/seekBarValue"
             android:text="@{String.valueOf(seekBar.progress)}"
             android:layout_below="@+id/seekBar"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_below="@+id/seekBarValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sTimeHourSpinner"
+            android:entries="@{person.enity}"
+            android:selectedItemPosition="@={person.spinnerPosition}"/>
 
     </RelativeLayout>
 

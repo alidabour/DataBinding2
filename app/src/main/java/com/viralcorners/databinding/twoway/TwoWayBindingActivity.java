@@ -17,6 +17,7 @@ public class TwoWayBindingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActivityTwoWayBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_two_way_binding);
         Person person = new Person();
+        person.start();
         ((EditFragment)getSupportFragmentManager().getFragments().get(0)).setPerson(person);
         ((ViewingFragment)getSupportFragmentManager().getFragments().get(1)).setPerson(person);
 
