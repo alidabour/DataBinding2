@@ -29,7 +29,23 @@ public class Person extends BaseObservable{
         enity.add("Third");
     }
 
+    public ObservableArrayList getCities(int position){
+        ObservableArrayList<String> cities = new ObservableArrayList<>();
+        switch (position){
+            case 0:
+                cities.add("Cairo");
+                cities.add("Alex");
+                break;
+            case 1:
+                cities.add("Not Cairo");
+                cities.add("Not Alex");
+                break;
+        }
+
+        return cities;
+    }
     public void addPoints(){
         points.set(points.get()+ 1 );
     }
+
 }
