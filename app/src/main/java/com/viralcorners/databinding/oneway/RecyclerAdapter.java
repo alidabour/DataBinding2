@@ -11,7 +11,8 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 /**
- * Created by Ali on 15/09/2017.
+ * Code found at Stackoverflow.com
+ * https://stackoverflow.com/questions/40588085/recyclerview-generic-adapter-with-databinding
  */
 public class RecyclerAdapter<T, VM extends ViewDataBinding>
         extends RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder> {
