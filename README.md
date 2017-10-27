@@ -1,6 +1,14 @@
 # DataBinding2
 # Collecting examples about Android Databinding 
 
+
+## Two Way binding 
+TwoBindingActivity display two parallel fragments,
+EditFragment(Yellow) and ViewingFragment(Green), both fragment use same viewModel where data entered in EditFragment are observed into ViewingFramgment.
+Example contians : EditText, Visibility trigger,SeekBar and Spinner
+
+<img src="/edit.png?raw=true" width="35%"></img>
+<img src="/view.png?raw=true" width="35%"></img>
 ## Implicit Attribute Listeners
 
 You can also reference attributes on other Views:
